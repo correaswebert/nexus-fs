@@ -11,8 +11,7 @@ ls -l $fuse_mount
 echo
 
 echo Printing the contents of a file in the mounted filesystem:
-files=$(find $fuse_mount -maxdepth 1 -type f)
-cat $files
+cat $fuse_mount/etc/passwd
 
 # unmount filesystem
 fusermount3 -u $fuse_mount
