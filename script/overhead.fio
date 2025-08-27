@@ -1,0 +1,17 @@
+[global]
+ioengine=libaio
+direct=1
+group_reporting
+directory=/home/exouser/sbtc
+
+[create-files]
+stonewall
+rw=create
+bs=4k
+nrfiles=10000
+size=4k
+
+[delete-files]
+stonewall
+rw=delete
+

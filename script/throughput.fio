@@ -1,0 +1,16 @@
+[global]
+ioengine=libaio
+direct=1
+size=16G
+bs=1M
+iodepth=64
+group_reporting
+
+[sequential-write]
+stonewall
+rw=write
+
+[sequential-read]
+stonewall
+rw=read
+
